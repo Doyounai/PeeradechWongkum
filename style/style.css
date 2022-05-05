@@ -1,0 +1,253 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+h1 {
+    /*color: rgb(255, 255, 255);*/
+    font-weight: 900;
+}
+
+p {
+    /*color: rgb(215, 215, 215);*/
+}
+
+hr {
+    background-color: #111;
+    border: 2px solid;
+}
+
+.sectionheader {
+    width: 100%;
+    margin-left: -50px;
+}
+
+/*effect*/
+.black-gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 1));
+
+    animation: gradientFadeIn 1.1s ease;
+}
+
+@keyframes gradientFadeIn {
+    0% {
+        height: 200%;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+/*flex*/
+.flexbox {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.item {
+    display: block;
+    box-sizing: border-box;
+}
+
+/*header*/
+.header {
+    text-align: center;
+    background-color: #666666;
+    background-image:
+        /*linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),*/
+        url(/Img/headerbackground.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.header h1 {
+    color: rgb(255, 255, 255);
+}
+
+.header p {
+    padding-right: 25px;
+    color: rgb(215, 215, 215);
+}
+
+.header a {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 204, 137);
+}
+
+.header .flexbox {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: -25px;
+    /*margin-left: -250px;*/
+}
+
+.header .item {
+    width: 50%;
+    /*padding-left: 60px;
+    padding-right: 60px;*/
+    z-index: 1;
+}
+
+.content img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header .right {
+    text-align: right;
+    padding-right: 150px;
+
+    animation: fadeIn 2s;
+    animation-delay: 0.15s ease;
+}
+
+.header .left {
+    margin-left: -80px;
+    text-align: left;
+    padding: 100px;
+
+    animation: fadeIn 3s;
+    animation-delay: 0.2s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        margin-top: 80px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+.header h1 {
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+/*navigation bar*/
+.nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    background-color: #111;
+}
+
+/*skill*/
+.skill .flexbox {
+    margin-left: 100px;
+    padding: 100px 190px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.skill .item {
+    width: 30%;
+}
+
+.skill h1 {
+    float: left;
+    width: fit-content;
+    margin: 0px;
+    color: #ff9c00;
+    margin-right: 10px;
+}
+
+.skill svg {
+    float: left;
+}
+
+.skill ul {
+    margin-top: -12px;
+    list-style-type: square;
+}
+
+/*project*/
+.project {
+    padding-bottom: 80px;
+}
+
+.project .flexbox {
+    margin-left: 100px;
+    padding: 0px 190px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.project .item{
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+.project h1 {
+    float: left;
+    width: fit-content;
+    margin: 0px;
+    color: rgb(68, 207, 119);
+    margin-right: 10px;
+}
+
+.project h3{
+    margin: 0;
+}
+
+.project p{
+    margin: 0;
+    margin-top: 10px;
+}
+
+.project img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 5px;
+    border-color: rgb(55, 55, 55);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
