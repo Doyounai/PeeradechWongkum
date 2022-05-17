@@ -6,15 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kong portfolio</title>
-    <link rel="icon" type="image/x-icon" href="/Img/title-icon.png">
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="icon" type="image/x-icon" href="Img/title-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+    <div id="Home"></div>
     <!--navigation bar-->
     <div class="nav">
         <ul>
+            <li><a href="#Home">Home</a></li>
             <li><a href="#Skill">Skill</a></li>
             <li><a href="#Project">Project</a></li>
             <li><a href="#Free Assets">Free Assets</a></li>
@@ -28,14 +30,14 @@
         <div class="flexbox">
             <div class="item">
                 <div class="content right">
-                    <img src="/Img/Profile.jpg">
+                    <img src="Img/Profile.jpg">
                 </div>
             </div>
             <div class="item">
                 <div class="content left">
                     <h1>Peeradech wongkum</h1>
                     <p>My name is kong. I prefer to work on game programing and technical artist. Hit me up at the
-                        <a href="#contact">contact</a> section.
+                        <a href="#Contact">contact</a> section.
                     </p>
                 </div>
             </div>
@@ -96,7 +98,7 @@
     </div>
 
     <!--project-->
-    <div class="project">
+    <div class="project" id="Project">
         <div class="flexbox">
             <div class="sectionheader">
                 <h1>PROJECT</h1>
@@ -115,69 +117,216 @@
             <div class="sectionheader">
                 <h2>Game Project</h2>
             </div>
-            <div class="item">
-                <img src="/Img/checkergameC.png">
-            </div>
-            <div class="item">
-                <h3>Checker Game with C language</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dignissimos reiciendis consequuntur.
-                    Distinctio neque adipisci nihil culpa, architecto ab doloribus quod illum voluptas quos repellendus
-                    veniam quaerat consectetur quibusdam atque amet. Recusandae, nesciunt facere laudantium nostrum
-                    velit voluptate quam sapiente!</p>
-            </div>
-            <div class="item">
-                <img src="/Img/TheLostOfFound.png">
-            </div>
-            <div class="item">
-                <h3>The lost of found (Global game jam 2021)</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dignissimos reiciendis consequuntur.
-                    Distinctio neque adipisci nihil culpa, architecto ab doloribus quod illum voluptas quos repellendus
-                    veniam quaerat consectetur quibusdam atque amet. Recusandae, nesciunt facere laudantium nostrum
-                    velit voluptate quam sapiente!</p>
-            </div>
-            <div class="item">
-                <img src="/Img/OneMoreStepToLoveYou01.png">
-            </div>
-            <div class="item">
-                <h3>One more step to love you (Monogame)</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dignissimos reiciendis consequuntur.
-                    Distinctio neque adipisci nihil culpa, architecto ab doloribus quod illum voluptas quos repellendus
-                    veniam quaerat consectetur quibusdam atque amet. Recusandae, nesciunt facere laudantium nostrum
-                    velit voluptate quam sapiente!</p>
-            </div>
-            <div class="item">
-                <img src="/Img/SpaceShooting.png">
-            </div>
-            <div class="item">
-                <h3>Space Shooting (Monogame)</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dignissimos reiciendis consequuntur.
-                    Distinctio neque adipisci nihil culpa, architecto ab doloribus quod illum voluptas quos repellendus
-                    veniam quaerat consectetur quibusdam atque amet. Recusandae, nesciunt facere laudantium nostrum
-                    velit voluptate quam sapiente!</p>
-            </div>
-            <div class="item">
-                <img src="/Img/wheyProtein.png">
-            </div>
-            <div class="item">
-                <h3>How to scoup out my wheir protein</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dignissimos reiciendis consequuntur.
-                    Distinctio neque adipisci nihil culpa, architecto ab doloribus quod illum voluptas quos repellendus
-                    veniam quaerat consectetur quibusdam atque amet. Recusandae, nesciunt facere laudantium nostrum
-                    velit voluptate quam sapiente!</p>
-            </div>
-            <div class="item">
-                <img src="/Img/kubtoron01.png">
-            </div>
-            <div class="item">
-                <h3>Kubtoron</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dignissimos reiciendis consequuntur.
-                    Distinctio neque adipisci nihil culpa, architecto ab doloribus quod illum voluptas quos repellendus
-                    veniam quaerat consectetur quibusdam atque amet. Recusandae, nesciunt facere laudantium nostrum
-                    velit voluptate quam sapiente!</p>
-            </div>
+            <a href="#Contact" class="projectbox">
+                <div class="projectItem">
+                    <img src="Img/kubtoron01.png">
+                </div>
+                <div class="projectItem">
+                    <h3 style="color: rgb(0, 128, 255)">Kubtoron</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dignissimos reiciendis
+                        consequuntur.
+                        Distinctio neque adipisci nihil culpa, architecto ab doloribus quod illum voluptas quos
+                        repellendus
+                        veniam quaerat consectetur quibusdam atque amet. Recusandae, nesciunt facere laudantium nostrum
+                        velit voluptate quam sapiente!</p>
+                </div>
+            </a>
+            <a href="#Contact" class="projectbox">
+                <div class="projectItem">
+                    <img src="Img/OneMoreStepToLoveYou01.png">
+                </div>
+                <div class="projectItem">
+                    <h3 style="color: rgb(232, 139, 0)">One more step to love you (Monogame)</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dignissimos reiciendis
+                        consequuntur.
+                        Distinctio neque adipisci nihil culpa, architecto ab doloribus quod illum voluptas quos
+                        repellendus
+                        veniam quaerat consectetur quibusdam atque amet. Recusandae, nesciunt facere laudantium nostrum
+                        velit voluptate quam sapiente!</p>
+                </div>
+            </a>
+            <a href="#Contact" class="projectbox">
+                <div class="projectItem">
+                    <img src="Img/checkergameC.png">
+                </div>
+                <div class="projectItem">
+                    <h3>Checker Game with C language</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dignissimos reiciendis
+                        consequuntur.
+                        Distinctio neque adipisci nihil culpa, architecto ab doloribus quod illum voluptas quos
+                        repellendus
+                        veniam quaerat consectetur quibusdam atque amet. Recusandae, nesciunt facere laudantium nostrum
+                        velit voluptate quam sapiente!</p>
+                </div>
+            </a>
+            <a href="#Contact" class="projectbox">
+                <div class="projectItem">
+                    <img src="Img/wheyProtein.png">
+                </div>
+                <div class="projectItem">
+                    <h3 style="color: rgb(164, 77, 0)">How to scoup out my wheir protein</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dignissimos reiciendis
+                        consequuntur.
+                        Distinctio neque adipisci nihil culpa, architecto ab doloribus quod illum voluptas quos
+                        repellendus
+                        veniam quaerat consectetur quibusdam atque amet. Recusandae, nesciunt facere laudantium nostrum
+                        velit voluptate quam sapiente!</p>
+                </div>
+            </a>
+            <a href="#Contact" class="projectbox">
+                <div class="projectItem">
+                    <img src="Img/SpaceShooting.png">
+                </div>
+                <div class="projectItem">
+                    <h3 style="color: rgb(220, 51, 0)">Space Shooting (Monogame)</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dignissimos reiciendis
+                        consequuntur.
+                        Distinctio neque adipisci nihil culpa, architecto ab doloribus quod illum voluptas quos
+                        repellendus
+                        veniam quaerat consectetur quibusdam atque amet. Recusandae, nesciunt facere laudantium nostrum
+                        velit voluptate quam sapiente!</p>
+                </div>
+            </a>
+            <a href="#Contact" class="projectbox">
+                <div class="projectItem">
+                    <img src="Img/TheLostOfFound.png">
+                </div>
+                <div class="projectItem">
+                    <h3 style="color: rgb(146, 24, 203)">The lost of found (Global game jam 2021)</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dignissimos reiciendis
+                        consequuntur.
+                        Distinctio neque adipisci nihil culpa, architecto ab doloribus quod illum voluptas quos
+                        repellendus
+                        veniam quaerat consectetur quibusdam atque amet. Recusandae, nesciunt facere laudantium nostrum
+                        velit voluptate quam sapiente!</p>
+                </div>
+            </a>
         </div>
         <!--graphic-->
+        <div class="flexbox">
+            <div class="sectionheader">
+                <h2>Graphic</h2>
+            </div>
+            <a href="#Contact" class="projectbox">
+                <div class="projectItem">
+                    <img src="Img/zombieVehicle.png">
+                </div>
+                <div class="projectItem">
+                    <h3>Zombie Vehicle</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dignissimos reiciendis
+                        consequuntur.
+                        Distinctio neque adipisci nihil culpa, architecto ab doloribus quod illum voluptas quos
+                        repellendus
+                        veniam quaerat consectetur quibusdam atque amet. Recusandae, nesciunt facere laudantium nostrum
+                        velit voluptate quam sapiente!</p>
+                </div>
+            </a>
+            <a href="#Contact" class="projectbox">
+                <div class="projectItem">
+                    <img src="Img/Cmu metaverse.png">
+                </div>
+                <div class="projectItem">
+                    <h3>CMU Metaverse</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dignissimos reiciendis
+                        consequuntur.
+                        Distinctio neque adipisci nihil culpa, architecto ab doloribus quod illum voluptas quos
+                        repellendus
+                        veniam quaerat consectetur quibusdam atque amet. Recusandae, nesciunt facere laudantium nostrum
+                        velit voluptate quam sapiente!</p>
+                </div>
+            </a>
+            <a href="#Contact" class="projectbox">
+                <div class="projectItem">
+                    <img src="Img/titleSet.png">
+                </div>
+                <div class="projectItem">
+                    <h3>Tilemap</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dignissimos reiciendis
+                        consequuntur.
+                        Distinctio neque adipisci nihil culpa, architecto ab doloribus quod illum voluptas quos
+                        repellendus
+                        veniam quaerat consectetur quibusdam atque amet. Recusandae, nesciunt facere laudantium nostrum
+                        velit voluptate quam sapiente!</p>
+                </div>
+            </a>
+        </div>
     </div>
+
+    <!--free assets-->
+    <div class="freeAsset" id="Free Assets">
+        <div class="flexbox">
+            <div class="sectionheader">
+                <h1>Free Assets</h1>
+            </div>
+            <div class="sectionheader">
+                <hr>
+            </div>
+            <div class="item">
+                <a href="https://www.cgtrader.com/free-3d-models/plant/other/environment-lowpoly-pack" target="_blank">
+                    <div class="card">
+                        <img src="Img/treeLowPoly02.jpg">
+                        <p>3d lowpoly forest model</p>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="https://www.cgtrader.com/free-3d-models/furniture/other/old-tv-toony-low-poly-style"
+                    target="_blank">
+                    <div class="card">
+                        <img src="Img/tv lowpoly.jpg">
+                        <p>3d lowpoly television model</p>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="https://github.com/Doyounai/Unity-Candlestick-Chart" target="_blank">
+                    <div class="card">
+                        <img src="Img/candle charts.png">
+                        <p>Unity candle candlestick chart display</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--contact-->
+    <div class="container" id="Contact">
+        <div class="contactSection">
+            <h1>Contact</h1>
+            <form action="https://formsubmit.co/peeradechwomkum35186@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New submission!">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Your email.." required>
+
+                <label for="fname">Name</label>
+                <input type="text" name="name" placeholder="Your name.." required>
+
+                <label for="subject">Message</label>
+                <textarea name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="contactSection">
+            <h1>Else</h1>
+            <div class="socialMedia">     
+                <div class="socialitem">
+                    <a class="fa fa-google"></a>
+                    <p>peeradechwomkum35186@gmail.com</p>
+                </div>
+                <div class="socialitem">
+                    <a href="https://www.youtube.com/channel/UCaXB_t1501xickb8SQgZHNQ" class="fa fa-youtube" target="_blank"></a>
+                    <a href="https://www.youtube.com/channel/UCaXB_t1501xickb8SQgZHNQ" style="margin: 0;" target="_blank"><p>GnokSang</p></a>
+                </div>
+                <div class="socialitem">
+                    <a class="fa fa-phone" target="_blank"></a>
+                    <p>0909458533</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
