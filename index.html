@@ -9,14 +9,150 @@
     <link rel="icon" type="image/x-icon" href="Img/title-icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 
 <body>
+    <div class="detail-box" id="kubtoron_detail">
+        <div class="information-box">
+            <div class="project-content flex-verticel">
+                <h1>Kubtoron</h1>
+                <br>
+                <iframe class="flex-item-center" width="560" height="315"
+                    src="https://www.youtube.com/embed/QO9hA-_semc" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <p>Kubtoron is a sandbox turn-based game. The idea of the game is to expand your city with the money
+                    that you get from space investment. This game was developed for the TGA game talent showcase.
+                </p>
+                <div class="flex-horizontal flex-center" style="align-items: center;">
+                    <img src="/Img/kubtoron/CSV_data.png" height="350px">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                    </svg>
+                    <img src="/Img/kubtoron/CSV_reader.png" width="250px">
+                </div>
+                <p>Our game develops on unity. In the space trading phase, we have to display candle strick. In this
+                    part, I use my candlestick chart that you can see from my free assets section. Moreover, for
+                    displaying a diagram I have to write my data convertor from CSV to my scriptable object on unity.
+                </p>
+                <div class="flex-horizontal flex-center">
+                    <div>
+                        <img src="/Img/kubtoron/news_managerments.png" width="250px">
+                        <p>news management</p>
+                    </div>
+                    <div>
+                        <img src="/Img/kubtoron/new_custom.png" width="250px">
+                        <p>news customization</p>
+                    </div>
+                </div>
+                <p>
+                    We have a news system that will show the situations about space. News will be different every turn.
+                    For this part, I develop a news display by using a scriptable object to edit news easily. In the
+                    same way, I can custom my building by using a scriptable object.
+                </p>
+            </div>
+        </div>
+        <div class="close-button" id="kubtoron_close">
+            <svg width="30" height="30" fill="rgb(255, 255, 255)" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+            </svg>
+        </div>
+    </div>
+
+    <div class="detail-box" id="oneMoreStep_detail">
+        <div class="information-box">
+            <div class="project-content flex-verticel">
+                <h1>One more step to love you</h1>
+                <br>
+                <iframe class="flex-item-center" width="560" height="315"
+                    src="https://www.youtube.com/embed/2WdRNloO6GQ" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <p>
+                    One more step to love you were developed in the Monogame framework. The story is about a freshman
+                    girl who has to fight for her love. This game is a puzzle game. Player has to force people who block
+                    the path to walk toward her love. But you need to think about how you move people because the people
+                    will return to their original position.
+                </p>
+                <p>
+                    In our game, we have to display dialogues that are related to illustration. Because of that, we need
+                    to develop a dialogue edit system to edit or customize dialogue easy as possible. Moreover, we have
+                    our game management system that can remove or create a new object.
+                </p>
+                <p>
+                    In level-design part, we decide to create a simple level edit that uses grid coordinates to edit
+                    people in a scene or custom level. So, if we want to develop a more advanced level-editor, we can
+                    develop from this program.
+                </p>
+            </div>
+        </div>
+        <div class="close-button" id="oneMoreStep_close">
+            <svg width="30" height="30" fill="rgb(255, 255, 255)" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+            </svg>
+        </div>
+    </div>
+
+    <div class="detail-box" id="checkerGame_detail">
+        <div class="information-box">
+            <div class="project-content flex-verticel">
+                <h1>Checker Game</h1>
+                <br>
+                <p>
+                    Checker game is a console application game that was created in C language. In this game, I work as a
+                    core programmer.
+                </p>
+                <p>
+                    The idea for programming is to store the checkerboard in a 2-dimensional array. Next, display the
+                    array by looping the array and displaying each element on the checkerboard. Moreover, this game can
+                    detect error moves. And, players can input new moves. For this logic, we can easily make with design
+                    function that separates their job. So, We can easily input a new move and check the new move even do
+                    something more. Our Checker game also has a king pierce that can move both forward and backward.
+                    King can jump in several squares. By checker game rules we have multiple captures our game also has
+                    that too.
+                </p>
+            </div>
+        </div>
+        <div class="close-button" id="checkerGame_close">
+            <svg width="30" height="30" fill="rgb(255, 255, 255)" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+            </svg>
+        </div>
+    </div>
+
+    <div class="detail-box" id="protein_detail">
+        <div class="information-box">
+            <div class="project-content flex-verticel">
+                <h1>How to scoop out my whey protein</h1>
+                <br>
+                <p>
+                    How to scoop out my whey protein developed in unity game engine. This game can play on a web browser
+                    and android device
+                </p>
+                
+            </div>
+        </div>
+        <div class="close-button" id="protein_close">
+            <svg width="30" height="30" fill="rgb(255, 255, 255)" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+            </svg>
+        </div>
+    </div>
+
     <div id="Home"></div>
     <!--navigation bar-->
     <div class="nav">
         <ul>
             <li><a href="#Home">Home</a></li>
+            <!--<li><a href="#about-me">About me</a></li>-->
             <li><a href="#Skill">Skill</a></li>
             <li><a href="#Project">Project</a></li>
             <li><a href="#Free Assets">Free Assets</a></li>
@@ -43,6 +179,26 @@
             </div>
         </div>
     </div>
+
+    <!--about me
+    <div id="about-me" class="about-me">
+        <div class="flexbox">
+            <div class="sectionheader">
+                <h1>ABOUT ME</h1>
+                
+            </div>
+            <div class="sectionheader">
+                <hr>
+            </div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi molestiae consequatur quia. Iste nesciunt
+                quibusdam tenetur quia, tempora aliquid sit quo natus libero excepturi ducimus, magnam nemo ipsa ad
+                quaerat accusamus ab explicabo ipsum numquam maiores inventore a saepe at debitis? Quae ex ipsam
+                necessitatibus rem iste ipsa, culpa voluptatibus?
+            </p>
+        </div>
+    </div>
+-->
 
     <!--Skill-->
     <div id="Skill" class="skill">
@@ -117,60 +273,47 @@
             <div class="sectionheader">
                 <h2>Game Project</h2>
             </div>
-            <a href="#Contact" class="projectbox">
+            <a class="projectbox" id="kubtoron">
                 <div class="projectItem">
                     <img src="Img/kubtoron01.png">
                 </div>
                 <div class="projectItem">
-                    <h3 style="color: rgb(0, 128, 255)">Kubtoron</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dignissimos reiciendis
-                        consequuntur.
-                        Distinctio neque adipisci nihil culpa, architecto ab doloribus quod illum voluptas quos
-                        repellendus
-                        veniam quaerat consectetur quibusdam atque amet. Recusandae, nesciunt facere laudantium nostrum
-                        velit voluptate quam sapiente!</p>
+                    <h3 style="color: rgb(0, 128, 255)">Kubtoron (TGA)</h3>
+                    <p>Kubtoron is a sandbox turn-based game. The idea of the game is to expand your city with the money
+                        that you get from space investment. This game was developed for the TGA game talent showcase.
+                    </p>
                 </div>
             </a>
-            <a href="#Contact" class="projectbox">
+            <a class="projectbox" id="oneMoreStep">
                 <div class="projectItem">
                     <img src="Img/OneMoreStepToLoveYou01.png">
                 </div>
                 <div class="projectItem">
                     <h3 style="color: rgb(232, 139, 0)">One more step to love you (Monogame)</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dignissimos reiciendis
-                        consequuntur.
-                        Distinctio neque adipisci nihil culpa, architecto ab doloribus quod illum voluptas quos
-                        repellendus
-                        veniam quaerat consectetur quibusdam atque amet. Recusandae, nesciunt facere laudantium nostrum
-                        velit voluptate quam sapiente!</p>
+                    <p> One more step to love you were created in the Monogame framework. The story is about a freshman
+                        girl who has to fight for her love. This game is a puzzle game. Player has to move people who
+                        block the path to walk to her love. But you need to think about how you move people because the
+                        people will return to their origin position. </p>
                 </div>
             </a>
-            <a href="#Contact" class="projectbox">
+            <a class="projectbox" id="checkerGame">
                 <div class="projectItem">
                     <img src="Img/checkergameC.png">
                 </div>
                 <div class="projectItem">
-                    <h3>Checker Game with C language</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dignissimos reiciendis
-                        consequuntur.
-                        Distinctio neque adipisci nihil culpa, architecto ab doloribus quod illum voluptas quos
-                        repellendus
-                        veniam quaerat consectetur quibusdam atque amet. Recusandae, nesciunt facere laudantium nostrum
-                        velit voluptate quam sapiente!</p>
+                    <h3>Checker Game on C language</h3>
+                    <p>Checker game is a console application game that created by C language. This game was made by 5
+                        people in year 1 university class. In this game I work as a core programmer. </p>
                 </div>
             </a>
-            <a href="#Contact" class="projectbox">
+            <a class="projectbox" id="protein">
                 <div class="projectItem">
                     <img src="Img/wheyProtein.png">
                 </div>
                 <div class="projectItem">
-                    <h3 style="color: rgb(164, 77, 0)">How to scoup out my wheir protein</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dignissimos reiciendis
-                        consequuntur.
-                        Distinctio neque adipisci nihil culpa, architecto ab doloribus quod illum voluptas quos
-                        repellendus
-                        veniam quaerat consectetur quibusdam atque amet. Recusandae, nesciunt facere laudantium nostrum
-                        velit voluptate quam sapiente!</p>
+                    <h3 style="color: rgb(164, 77, 0)">How to scoop out my whey protein</h3>
+                    <p>How to scoop out my whey protein developed in unity game engine. This game can play on a web
+                        browser and android device</p>
                 </div>
             </a>
             <a href="#Contact" class="projectbox">
@@ -179,26 +322,22 @@
                 </div>
                 <div class="projectItem">
                     <h3 style="color: rgb(220, 51, 0)">Space Shooting (Monogame)</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dignissimos reiciendis
-                        consequuntur.
-                        Distinctio neque adipisci nihil culpa, architecto ab doloribus quod illum voluptas quos
-                        repellendus
-                        veniam quaerat consectetur quibusdam atque amet. Recusandae, nesciunt facere laudantium nostrum
-                        velit voluptate quam sapiente!</p>
+                    <p>This game is a simple space shooting game. Develop on Monogame framework. This space shooting
+                        game is created by using an object management script from One more step to love you.</p>
                 </div>
             </a>
-            <a href="#Contact" class="projectbox">
+            <a href="https://gnok.itch.io/the-lost-of-found?fbclid=IwAR1LnFC7AaPrsyPN79jYm_okReSixVSJYJjiiFemCcZGrXKTjUDUsEV7xTo"
+                class="projectbox" target="_blank">
                 <div class="projectItem">
                     <img src="Img/TheLostOfFound.png">
                 </div>
                 <div class="projectItem">
                     <h3 style="color: rgb(146, 24, 203)">The lost of found (Global game jam 2021)</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dignissimos reiciendis
-                        consequuntur.
-                        Distinctio neque adipisci nihil culpa, architecto ab doloribus quod illum voluptas quos
-                        repellendus
-                        veniam quaerat consectetur quibusdam atque amet. Recusandae, nesciunt facere laudantium nostrum
-                        velit voluptate quam sapiente!</p>
+                    <p>The lost of found is a puzzle horror game that was made for Chiang Mai global game jam. This game
+                        is about 2 characters “Lost” and “Found”. Lost have the ability that can make everything lost.
+                        And Found has the ability that can found everything that is lost. Gameplay is about losing
+                        something and finding it in the correct position to solve the puzzle while hiding from the
+                        enemy.</p>
                 </div>
             </a>
         </div>
@@ -310,14 +449,18 @@
         </div>
         <div class="contactSection">
             <h1>Else</h1>
-            <div class="socialMedia">     
+            <div class="socialMedia">
                 <div class="socialitem">
                     <a class="fa fa-google"></a>
                     <p>peeradechwomkum35186@gmail.com</p>
                 </div>
                 <div class="socialitem">
-                    <a href="https://www.youtube.com/channel/UCaXB_t1501xickb8SQgZHNQ" class="fa fa-youtube" target="_blank"></a>
-                    <a href="https://www.youtube.com/channel/UCaXB_t1501xickb8SQgZHNQ" style="margin: 0;" target="_blank"><p>GnokSang</p></a>
+                    <a href="https://www.youtube.com/channel/UCaXB_t1501xickb8SQgZHNQ" class="fa fa-youtube"
+                        target="_blank"></a>
+                    <a href="https://www.youtube.com/channel/UCaXB_t1501xickb8SQgZHNQ" style="margin: 0;"
+                        target="_blank">
+                        <p>GnokSang</p>
+                    </a>
                 </div>
                 <div class="socialitem">
                     <a class="fa fa-phone" target="_blank"></a>
@@ -327,6 +470,7 @@
         </div>
     </div>
 
+    <script src="detailBox.js"></script>
 </body>
 
 </html>

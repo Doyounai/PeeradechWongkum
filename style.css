@@ -183,6 +183,39 @@ hr {
     background-color: #111;
 }
 
+/*about me*/
+.about-me {}
+
+.about-me .flexbox {
+    margin-left: 100px;
+    /*padding: 100px 190px;*/
+    padding-left: 190px;
+    padding-right: 190px;
+    padding-top: 100px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.about-me .item {
+    width: 100%;
+}
+
+.about-me h1 {
+    float: left;
+    width: fit-content;
+    margin: 0px;
+    color: #4a42be;
+    margin-right: 10px;
+}
+
+.about-me svg {
+    float: left;
+}
+
+.about-me p {
+    width: 95%;
+}
+
 /*skill*/
 .skill .flexbox {
     margin-left: 100px;
@@ -214,7 +247,8 @@ hr {
 
 /*project*/
 .project {
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .project .projectbox {
@@ -226,12 +260,15 @@ hr {
     text-decoration: none;
 
     justify-content: center;
+
+    transition: 0.3s;
 }
 
 .project .projectbox::before {
     opacity: 0;
     position: absolute;
-    content: "▶";
+    /*content: "▶";*/
+    content: "🖱️";
     font-size: 35px;
     font-weight: 900;
     color: rgb(0, 0, 0);
@@ -249,6 +286,14 @@ hr {
     opacity: 1;
 }
 
+.project .projectbox:hover{
+    /*background-color: rgb(241, 238, 244);*/
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .project .projectItem {
     display: block;
     box-sizing: border-box;
@@ -256,8 +301,8 @@ hr {
     padding-right: 50px;
     /*width: 46%;*/
     width: 480px;
-    margin-top: 25px;
-    margin-bottom: 3px;
+    margin-top: 14px;
+    margin-bottom: 14px;
 }
 
 .project .flexbox {
@@ -303,10 +348,10 @@ hr {
     padding: 0;
     margin: 0;
     width: 100%;
-    border-style: solid;
+    /*border-style: solid;
     border-width: 5px;
     border-radius: 5px;
-    border-color: rgb(55, 55, 55);
+    border-color: rgb(55, 55, 55);*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -449,4 +494,96 @@ input[type=submit]:hover {
 .fa-phone {
     background: #364461;
     color: white;
+}
+
+/*detail box*/
+.detail-box {
+    position: fixed;
+    display: none;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.information-box {
+    border-color: rgb(56, 56, 56);
+    border-style: solid;
+    border-width: 4px;
+    /*border-radius: 15px;*/
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    height: 90%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    overflow-y: scroll;
+    overflow-x: hidden; 
+}
+
+.close-button{
+    /*right: 2%;
+    top: 3%;*/
+    top: 4%;
+    left: 1.5%;
+    position: absolute;
+}
+
+.close-button svg{
+    background-color: rgb(255, 135, 61);
+    border-radius: 50%;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.close-button svg:hover{
+    width: 38px;
+    height: 38px;
+    transform: rotate(180deg);
+}
+
+.information-box .project-content{
+    width: 100%;
+    padding: 30px 50px;
+    box-sizing: border-box;
+}
+
+.information-box img{
+    border: #111 solid 4px;
+
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+.flex-verticel{
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+}
+
+.flex-horizontal{
+    display: flex;
+    flex-direction: row;
+    width: inherit;
+}
+
+.flex-center{
+    justify-content: center;
+}
+
+.flex-item-center{
+    align-self: center;
+}
+
+.information-box .project-content p{
+    padding-left: 50px;
+    text-indent: 40px;
 }
